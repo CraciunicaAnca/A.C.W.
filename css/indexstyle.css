@@ -1,0 +1,160 @@
+
+body {
+margin:0;
+text-align: center;
+font-family: sans-serif, cursive;
+} /*set the body's font style*/
+h1 {
+  color: black;
+  font-size: 5.625rem;
+  margin:50px auto 0 auto;
+  font-family: 'Dancing Script', cursive;
+} /*here I set the style,color,size,margin for the all the h1 of index.html*/
+h2{
+  color: black;
+  font-family: 'Libre Bodoni', serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}/*here I set the style,color,size,margin for the all the h2 of index.html*/
+h3{
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+}/*here I set the style,color,size,margin for the all the h3 of index.html*/
+.top-container {
+  background-color: #FDF8F5;
+  position: center;
+
+}
+.middle-container{
+  background-color: #FDF8F5;
+
+}
+/*I chose the same background-color for the two sections of my index page*/
+
+/* different colour for the navbar*/
+.navigationbar {
+  overflow: hidden;
+  background-color:  #E8CEBF;
+}
+/*this is the style for the buttons of the navbar*/
+.navigationbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+/*position for the dropdownmenu*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/*style for the dropdrownmenu*/
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/*style of the dropdownmenu when the user goes with the mouse on it*/
+.navigationbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  filter: blur(50px);
+	z-index: -3;
+
+}
+/*style of the dropdownmenu content is revelead */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*style of the dropdownmenu content is revelead(the weeks) */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/*style of the dropdownmenu's content when the user goes with the mouse on it*/
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*this is the box created for the pictures's slideshow*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* this is for the Slideshow's container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* this is the next button that appears on the right that allows the user to see the next picture */
+ .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* this is to positionate it to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* to be seen easire, when the user click on the arrow it becomes a transparent black*/
+ .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* for the picture's text*/
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* to numerotate the pictures*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

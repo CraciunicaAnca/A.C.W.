@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Anca Craciunica</title>
+  <link rel="stylesheet" href="css/indexstyle.css"> <!-- I had to add it because the css is external and otherwise it would not work -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--some fonts from google-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Bodoni:wght@500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet"> <!--some fonts from google-->
+</head>
+
+<body>
+  <div class="top-container"> <!-- here I created a div to buil and modifiy the navigation bar without altering the rest of the pag -->
+  <div class="navigationbar"> <!--class for navigationbar-->
+    <a href="#home">Home</a>
+    <a href="about me.html">About Me</a> <!--this is to create the second page of the website -->
+    <a href="contact details.html">Contact Details</a> <!--this is to create the third page of the website-->
+    <div class="dropdown"> <!-- to create the dropdown-menu-->
+      <button class="dropbtn">Reflective Thougths
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Week1.html">Week 1</a>
+        <a href="Week2.html">Week 2</a>
+        <a href="Week3.html">Week 3</a>
+        <a href="Week4.html">Week 4</a>
+        <a href="Week5.html">Week 5</a>
+        <a href="Week6.html">Week 6</a>
+        <a href="Week7.html">Week 7</a>
+        <a href="Week8.html">Week 8</a>
+        <a href="Week9.html">Week 9</a>
+        <a href="Week10.html">Week 10</a> <!-- this are the links to open each week-->
+      </div>
+    </div>
+  </div>
+  </nav>
+ <h2>Hi!</h2>  <!-- wecolme messagge -->
+    <h1>I'm Anca.</h1> <!-- wecolme messagge -->
+    <h2>A Creative Computing student.</h2> <!-- wecolme messagge -->
+    <br> <!-- break -->
+  </div>
+</div>
+<div class="middle-container"> <!-- this is the second "box/container" of the homepage, where i display some of my photographies -->
+    <div class="slideshow-container">
+<div class="mySlides fade">
+
+  <div class="numbertext">1 / 5</div>  <!--for the first picture-->
+  <img src="images/nationalmuseum.jpeg" style="width:100%"> <!--for the first picture-->
+  <div class="text">© Anca Craciunica</div> <!--for the first picture-->
+</div>
+
+<div class="mySlides fade"> <!--for the second picture-->
+  <div class="numbertext">2 / 5</div> <!--for the second picture-->
+  <img src="images/BigBenjpeg.jpeg" style="width:100%"><!--for the second picture-->
+  <div class="text">© Anca Craciunica</div><!--for the second picture-->
+</div>
+
+<div class="mySlides fade"> <!--for the thirs picture-->
+  <div class="numbertext">3 / 5</div><!--for the thirs picture-->
+  <img src="images/doggie.jpeg" style="width:100%"><!--for the third picture-->
+  <div class="text">© Anca Craciunica</div><!--for the third  picture-->
+</div>
+
+<div class="mySlides fade"> <!--for the fourth picture-->
+  <div class="numbertext">4 / 5</div>
+  <img src="images/jersey2.jpeg" style="width:100%">
+  <div class="text">© Anca Craciunica</div>
+</div>
+
+<div class="mySlides fade"> <!--for the fifth picture-->
+  <div class="numbertext">5 / 6</div>
+  <img src="images/Murda.jpeg" style="width:100%">
+  <div class="text">© Anca Craciunica</div>
+</div>
+
+<a class="next" onclick="plusSlides(1)">❯</a> <!-- to make the next picture appear -->
+</div>
+
+<!--this are a few line of javascript to give motion to my pictures. Without it the pictures could not slide from one to another-->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div> <!-- here I wanted to mention the University, so I added a google maps link with the location, and a url to the main site-->
+<h2> The University of West London:</h2>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.3450549667555!2d-0.30539128411836486!3d51.506885279635085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760df3035c5dfd%3A0x422f2334ccf21438!2sUniversitatea%20West%20London!5e0!3m2!1sro!2suk!4v1653495247310!5m2!1sro!2suk"
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<h3> More information about the <a href="https://www.uwl.ac.uk" University> University</h3></a>
+<hr>
+    <h3> This is my personal <a class="link" href="https://www.instagram.com/_craciunica_/">Instagram</a> <!--this is my personal instangram-->
+      <hr>
+      <h3> This is my photography account <a class="link" href="https://www.instagram.com/insider_photography/">Instagram</a></h3>
+
+    <p> © Anca Craciunica</p>
+</div>

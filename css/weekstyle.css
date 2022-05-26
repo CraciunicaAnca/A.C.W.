@@ -1,0 +1,81 @@
+/********* To simplify and organize better the code, I decided to create a single css file for all the weeks.
+I adopted a 3-column layout********/
+
+body {
+margin: 0;
+background-color: #E8CEBF;
+} /*to style the body*/
+h1, h2 {
+font-family: "Times New Roman", cursive;
+font-weight: 500;
+text-align: center; /*to style h1 and h2*/
+        }
+p {
+font-family: 'Times New Roman', sans-serif;
+        }
+        .header {
+background: #E8CEBF;;
+height: 100px;
+text-align: center;
+color: #black;
+padding: 50px;
+        } /*the refliective writing about the weeks have the same style for each module*/
+        .container div {
+padding: 1%;
+box-sizing: border-box;
+min-height: 500px;
+
+        }
+        .left-col, .right-col {
+background-color: white;  /******************* these are the columns to place the content in an organized way *******************/
+width: 35%;               /******************* I chose a white-background colour because it's easier to read  *******************/
+float: left;              /******************* and created a contrast with the bacground on top and bottom page *****************/
+text-align: left;         /*******************  The header and footer have the same colour and text-align       *****************/
+                          /******************* I used different paddings values to place the columns lower     ******************/
+                         /******************* so I could make so space for the previous/next buttons in the left corner *********/
+        }
+        .center-col {
+width: 30%;
+float: left;
+text-align: left;
+background-color: white;
+        }
+        .left-col,.center-col{
+          border-right: 1px solid black;
+        }
+        .footer {
+clear: both;
+font-family: 'Amatica SC', cursive;
+background: #E8CEBF;
+text-align: center;
+height: 50px;
+padding-top: 20px;
+box-sizing: border-box; box-decoration-break: slice;
+        }
+        a { /********** for the previous and next buttons which help the user to navigate easily between the weeks****/
+  text-decoration: none;
+  display:inline-flex;
+  padding: 12px 20px;
+
+}
+a:hover {
+  background-color: #E8CEBF;
+  color: black;
+}
+
+/********** for the previous and next buttons which help the user to navigate easily between the weeks****/
+.previous {
+  background-color: black;
+  color: white;
+}
+
+.next {
+  background-color: black;
+  color: white;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+</body>

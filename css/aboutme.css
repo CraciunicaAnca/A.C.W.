@@ -1,0 +1,175 @@
+/********** to create the illusion that ther is table on top of the main page*****/
+html {
+  box-sizing: border-box;
+  background-color: #E8CEBF; /**background colour**/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+/******************************
+here is where I style each section of my aboutme page
+***********/
+body {
+  font-family: 'Times New Roman', sans-serif;
+  line-height: 1.5;
+  background-color: #black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.my-icon {
+  fill: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.first-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: white;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.8);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-gap: 15px;
+  padding: 22px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/***********************************
+* style  for the main info, piture, links, title.
+***********************************/
+
+img.avatar {
+  width: 130px;
+}
+
+.name {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  color: purple;
+}
+
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.link-item svg {
+  margin-right: 6px;
+}
+
+/***********************************
+* to style the experience section
+***********************************/
+
+.jobs {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+.jobs-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.company-name {
+  font-weight: bold;
+  line-height: 1.0;
+}
+
+/***********************************
+* to style the skill section
+***********************************/
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 24px;
+}
+
+.skills-container ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+/***********************************
+* to style the interest section
+***********************************/
+
+.interests-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interests-container img {
+  height: 35px;
+  opacity: 0.75;
+}
+
+
+@media only screen and (max-width : 768px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+/***to create a certain position in the page**/
+  .links, .job-title-container {
+    flex-direction: column;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .interests-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .interests-container img {
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+}

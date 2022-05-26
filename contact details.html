@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Get In Touch!</title> <!--form's title-->
+<link rel="stylesheet" href="css/contactdetails.css"> <!-- because the css is external-->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> <!--for the google fonts -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-form">
+			<div class="left-side"></div>
+			<div class="right-side">
+				<h2>Let's get in touch!</h2
+
+					<form name="contact-form"  method="post" action="anca_craciunica@yahoo.com" onsubmit="return validateemail(anca_craciunica@yahoo.com);">
+				<input type="text" class="field" placeholder="Your Name" required> <!-- so that the user can type the name-->
+				<input type="text" class="field" placeholder="Your Email"required> <!--so that the user can type the email-->
+				<input type="text" class="field" placeholder="Phone"required><!--so that the user can type the phone number-->
+				<textarea placeholder="Type Your Message Here" rows="5" class="field"></textarea> <!--so that the user can type the messagge-->
+				<button class="btn">Surprise Me</button><!--to create the button-->
+				<br>
+				<button class="btn">
+					<a href="mailto:anca_craciunica@yahoo.com">Or Email Me</a>
+				</button><!--to give the possibility to email directly-->
+
+			</form>
+			</div>
+		</div>
+	</div>
+	<script> /*a few lines of javascript to validate the form so that the user introduce a valid email address*/
+	function validateemail()
+	{
+	var x=document.myform.email.value;
+	var atposition=x.indexOf("@");
+	var dotposition=x.lastIndexOf(".");
+	if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+	alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+	return false;
+	}
+	}
+	</script>
+</body>
+</html>
